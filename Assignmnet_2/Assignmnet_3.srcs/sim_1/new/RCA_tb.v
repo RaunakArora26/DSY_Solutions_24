@@ -32,8 +32,7 @@ Ripple_Carry_Adder dut(a,b,Cin,Cout,Sum);
 initial begin
     for(i=0;i<512;i=i+1)
     begin
-        {Cin,b,a} = i;
-        #10;    
+        {Cin,b,a} = i;#10; 
     end
     $finish;
     

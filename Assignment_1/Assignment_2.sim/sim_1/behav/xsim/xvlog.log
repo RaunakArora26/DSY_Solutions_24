@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sources_1/new/Half_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sources_1/new/Multiplier_twoBits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_twoBits
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sim_1/new/Multipler_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multipler_tb

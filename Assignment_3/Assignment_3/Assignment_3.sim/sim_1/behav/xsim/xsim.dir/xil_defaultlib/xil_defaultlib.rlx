@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sim_1/new/Boolean_func_tb.v,1738747650,verilog,,,,Boolean_func_tb,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sim_1/new/NOR_SW_tb.v,1738744913,verilog,,,,NOR_SW_tb,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sources_1/new/Boolean_func.v,1738747385,verilog,,E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sources_1/new/NOR_SM.v,,boolean_function,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sources_1/new/NOR_SM.v,1738747266,verilog,,E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sim_1/new/Boolean_func_tb.v,,NOR_SM,,,,,,,,

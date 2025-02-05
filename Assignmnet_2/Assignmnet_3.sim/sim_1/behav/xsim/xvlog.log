@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignmnet_3/Assignmnet_3.srcs/sources_1/new/FA.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Full_Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignmnet_3/Assignmnet_3.srcs/sources_1/new/Half_Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Half_Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignmnet_3/Assignmnet_3.srcs/sources_1/new/Ripple_Carry_Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ripple_Carry_Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignmnet_3/Assignmnet_3.srcs/sim_1/new/RCA_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RCA_tb

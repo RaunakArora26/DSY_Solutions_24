@@ -2,9 +2,7 @@
 2019.2
 Nov  6 2019
 21:57:16
-E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sim_1/new/FA_tb.v,1738050914,verilog,,,,FA_tb,,,,,,,,
-E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sim_1/new/Multipler_tb.v,1738158795,verilog,,,,Multipler_tb,,,,,,,,
-E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sources_1/new/Full_Adder.v,1738050681,verilog,,E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sources_1/new/Half_Adder.v,,Full_Adder,,,,,,,,
-E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sources_1/new/Half_Adder.v,1738050759,verilog,,E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sources_1/new/Multiplier_twoBits.v,,Half_Adder,,,,,,,,
-E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sources_1/new/Multiplier_twoBits.v,1738158553,verilog,,E:/DSY_SOLUTIONS/Assignment_2/Assignment_2.srcs/sim_1/new/Multipler_tb.v,,Multiplier_twoBits,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sim_1/new/Multipler_tb.v,1738257507,verilog,,,,Multipler_tb,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sources_1/new/Half_Adder.v,1738050759,verilog,,E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sources_1/new/Multiplier_twoBits.v,,Half_Adder,,,,,,,,
+E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sources_1/new/Multiplier_twoBits.v,1738158553,verilog,,E:/DSY_SOLUTIONS/Assignment_1/Assignment_2.srcs/sim_1/new/Multipler_tb.v,,Multiplier_twoBits,,,,,,,,

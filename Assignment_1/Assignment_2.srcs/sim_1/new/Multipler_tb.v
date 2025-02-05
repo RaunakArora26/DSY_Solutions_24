@@ -25,7 +25,7 @@ module Multipler_tb();
     reg A0,A1,B0,B1;
     wire P3,P2,P1,P0;
     integer i;
-    Multiplier_twoBits u_Multiplier_twoBits(
+    Multiplier_twoBits u_Multiplier_twoBits (
     .A1 ( A1 ),
     .A0 ( A0 ),
     .B1 ( B1 ),
