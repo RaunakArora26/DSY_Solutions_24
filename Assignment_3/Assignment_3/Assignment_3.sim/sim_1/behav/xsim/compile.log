@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sources_1/new/Boolean_func.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module boolean_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sources_1/new/NOR_SM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_SM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DSY_SOLUTIONS/Assignment_3/Assignment_3/Assignment_3.srcs/sim_1/new/Boolean_func_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Boolean_func_tb

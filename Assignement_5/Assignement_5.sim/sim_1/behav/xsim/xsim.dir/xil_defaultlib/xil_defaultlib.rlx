@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignement_5/Assignement_5.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignement_5/Assignement_5.srcs/sim_1/new/decoder_tb.v,1739353825,verilog,,,,decoder_tb,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignement_5/Assignement_5.srcs/sources_1/new/Three_to_eight_decoder.v,1739353230,verilog,,C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignement_5/Assignement_5.srcs/sim_1/new/decoder_tb.v,,Three_to_eight_decoder_behavirol,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignement_5/Assignement_5.srcs/sources_1/new/Three_to_eight_decoder_dataflow.v,1739353471,verilog,,C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignement_5/Assignement_5.srcs/sim_1/new/decoder_tb.v,,Three_to_eight_decoder_dataflow,,,,,,,,
