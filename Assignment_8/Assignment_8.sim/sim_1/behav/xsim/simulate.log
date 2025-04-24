@@ -1,0 +1,12 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Time=17000: Input=1, Output=0
+Time=27000: Input=0, Output=0
+Time=37000: Input=1, Output=0 (EXPECT A=1)
+Time=47000: Input=1, Output=1
+Time=57000: Input=0, Output=0 (EXPECT B=2)
+Time=67000: Input=1, Output=0
+Time=77000: Input=1, Output=1
+Time=87000: Input=1, Output=0
+Time=97000: Input=0, Output=0 (EXPECT B=2)
+$finish called at time : 97 ns : File "C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sim_1/new/tb3.v" Line 94

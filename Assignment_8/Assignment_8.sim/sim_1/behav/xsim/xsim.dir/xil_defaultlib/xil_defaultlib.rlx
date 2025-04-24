@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sim_1/new/tb.v,1743234496,verilog,,,,tb,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sim_1/new/tb3.v,1743392698,verilog,,,,tb_pattern_detector,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sources_1/new/Pattern_detector.v,1743244122,verilog,,C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sim_1/new/tb.v,,Pattern_detector,,,,,,,,
+C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sources_1/new/Ques_2_overlapping_patter_detecotr.v,1743391439,verilog,,C:/Users/dell/Desktop/DSY_SOLUTIONS/Assignment_8/Assignment_8.srcs/sim_1/new/tb3.v,,Ques_2_overlapping_patter_detecotr,,,,,,,,

@@ -1,0 +1,707 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Apr 11 14:37:44 2025
+| Host         : DESKTOP-MUH1IIG running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7k70tfbg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_top
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 97
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-25 | Critical Warning | Invalid clock waveform on gigabit transceiver (GT) | 4          |
+| XDCH-2    | Warning          | Same min and max delay values on IO port           | 93         |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-25#1 Critical Warning
+Invalid clock waveform on gigabit transceiver (GT)  
+The waveform of the user clock gt0_txusrclk_i defined on the transceiver output pin mgtEngine/ROCKETIO_WRAPPER_TILE_i/gt0_ROCKETIO_WRAPPER_TILE_i/gtxe2_i/TXOUTCLK or on the net connected to that pin is not consistent with the transceiver settings. The auto-derived clock period is UNDEFINED and the user-defined clock period is 12.800. The expected clock waveform is computed based on the GT settings and the incoming clock to the transceiver. It is recommended to check that there are no missing clocks to the GT and that all the transceiver settings are correct
+Related violations: <none>
+
+TIMING-25#2 Critical Warning
+Invalid clock waveform on gigabit transceiver (GT)  
+The waveform of the user clock gt2_txusrclk_i defined on the transceiver output pin mgtEngine/ROCKETIO_WRAPPER_TILE_i/gt2_ROCKETIO_WRAPPER_TILE_i/gtxe2_i/TXOUTCLK or on the net connected to that pin is not consistent with the transceiver settings. The auto-derived clock period is UNDEFINED and the user-defined clock period is 12.800. The expected clock waveform is computed based on the GT settings and the incoming clock to the transceiver. It is recommended to check that there are no missing clocks to the GT and that all the transceiver settings are correct
+Related violations: <none>
+
+TIMING-25#3 Critical Warning
+Invalid clock waveform on gigabit transceiver (GT)  
+The waveform of the user clock gt4_txusrclk_i defined on the transceiver output pin mgtEngine/ROCKETIO_WRAPPER_TILE_i/gt4_ROCKETIO_WRAPPER_TILE_i/gtxe2_i/TXOUTCLK or on the net connected to that pin is not consistent with the transceiver settings. The auto-derived clock period is UNDEFINED and the user-defined clock period is 12.800. The expected clock waveform is computed based on the GT settings and the incoming clock to the transceiver. It is recommended to check that there are no missing clocks to the GT and that all the transceiver settings are correct
+Related violations: <none>
+
+TIMING-25#4 Critical Warning
+Invalid clock waveform on gigabit transceiver (GT)  
+The waveform of the user clock gt6_txusrclk_i defined on the transceiver output pin mgtEngine/ROCKETIO_WRAPPER_TILE_i/gt6_ROCKETIO_WRAPPER_TILE_i/gtxe2_i/TXOUTCLK or on the net connected to that pin is not consistent with the transceiver settings. The auto-derived clock period is UNDEFINED and the user-defined clock period is 12.800. The expected clock waveform is computed based on the GT settings and the incoming clock to the transceiver. It is recommended to check that there are no missing clocks to the GT and that all the transceiver settings are correct
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'or1200_clmode' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 0.000 [get_ports or1200_clmode]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'or1200_pic_ints' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 0.000 [get_ports or1200_pic_ints]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'reset' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 0.000 [get_ports reset]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 30)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[4]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[5]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[6]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_0_i[7]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[4]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[5]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[6]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'DataIn_pad_1_i[7]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {DataIn_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'LineState_pad_0_i[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {LineState_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 15)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'LineState_pad_0_i[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {LineState_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 15)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'LineState_pad_1_i[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {LineState_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 23)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'LineState_pad_1_i[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {LineState_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 23)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'RxActive_pad_0_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports RxActive_pad_0_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'RxActive_pad_1_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports RxActive_pad_1_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 24)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'RxError_pad_0_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports RxError_pad_0_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'RxError_pad_1_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports RxError_pad_1_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 25)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'RxValid_pad_0_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports RxValid_pad_0_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 18)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'RxValid_pad_1_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports RxValid_pad_1_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 26)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'TxReady_pad_0_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports TxReady_pad_0_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 19)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'TxReady_pad_1_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports TxReady_pad_1_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#33 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#34 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#35 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#36 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[4]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#37 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[5]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#38 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[6]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#39 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_0_i[7]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_0_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#40 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#41 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#42 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#43 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#44 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[4]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#45 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[5]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#46 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[6]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#47 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'VStatus_pad_1_i[7]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports {VStatus_pad_1_i[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 28)
+Related violations: <none>
+
+XDCH-2#48 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'usb_vbus_pad_0_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports usb_vbus_pad_0_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 21)
+Related violations: <none>
+
+XDCH-2#49 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.000 ns has been defined on port 'usb_vbus_pad_1_i' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock sysClk 3.000 [get_ports usb_vbus_pad_1_i]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#50 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#51 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#52 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#53 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#54 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[4]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#55 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[5]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#56 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[6]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#57 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_0_o[7]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 49)
+Related violations: <none>
+
+XDCH-2#58 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#59 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#60 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#61 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#62 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[4]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#63 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[5]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#64 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[6]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#65 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'DataOut_pad_1_o[7]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {DataOut_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 50)
+Related violations: <none>
+
+XDCH-2#66 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'OpMode_pad_0_o[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {OpMode_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 41)
+Related violations: <none>
+
+XDCH-2#67 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'OpMode_pad_0_o[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {OpMode_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 41)
+Related violations: <none>
+
+XDCH-2#68 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'OpMode_pad_1_o[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {OpMode_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 42)
+Related violations: <none>
+
+XDCH-2#69 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'OpMode_pad_1_o[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {OpMode_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 42)
+Related violations: <none>
+
+XDCH-2#70 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'SuspendM_pad_0_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports SuspendM_pad_0_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 43)
+Related violations: <none>
+
+XDCH-2#71 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'SuspendM_pad_1_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports SuspendM_pad_1_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 44)
+Related violations: <none>
+
+XDCH-2#72 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'TermSel_pad_0_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports TermSel_pad_0_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 33)
+Related violations: <none>
+
+XDCH-2#73 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'TermSel_pad_1_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports TermSel_pad_1_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#74 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'TxValid_pad_0_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports TxValid_pad_0_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 34)
+Related violations: <none>
+
+XDCH-2#75 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'TxValid_pad_1_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports TxValid_pad_1_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 38)
+Related violations: <none>
+
+XDCH-2#76 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_Load_pad_0_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports VControl_Load_pad_0_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 35)
+Related violations: <none>
+
+XDCH-2#77 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_Load_pad_1_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports VControl_Load_pad_1_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 39)
+Related violations: <none>
+
+XDCH-2#78 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_0_o[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#79 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_0_o[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#80 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_0_o[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#81 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_0_o[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_0_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#82 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_1_o[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 46)
+Related violations: <none>
+
+XDCH-2#83 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_1_o[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 46)
+Related violations: <none>
+
+XDCH-2#84 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_1_o[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 46)
+Related violations: <none>
+
+XDCH-2#85 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'VControl_pad_1_o[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {VControl_pad_1_o[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 46)
+Related violations: <none>
+
+XDCH-2#86 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'XcvSelect_pad_0_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports XcvSelect_pad_0_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 36)
+Related violations: <none>
+
+XDCH-2#87 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'XcvSelect_pad_1_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports XcvSelect_pad_1_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 40)
+Related violations: <none>
+
+XDCH-2#88 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'or1200_pm_out[0]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {or1200_pm_out[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 32)
+Related violations: <none>
+
+XDCH-2#89 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'or1200_pm_out[1]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {or1200_pm_out[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 32)
+Related violations: <none>
+
+XDCH-2#90 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'or1200_pm_out[2]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {or1200_pm_out[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 32)
+Related violations: <none>
+
+XDCH-2#91 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'or1200_pm_out[3]' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports {or1200_pm_out[*]}]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 32)
+Related violations: <none>
+
+XDCH-2#92 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'phy_rst_pad_0_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports phy_rst_pad_0_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 47)
+Related violations: <none>
+
+XDCH-2#93 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'phy_rst_pad_1_o' relative to clock sysClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock sysClk 0.000 [get_ports phy_rst_pad_1_o]
+C:/Users/dell/Desktop/DSY_SOLUTIONS/project_1/project_1.srcs/constrs_2/imports/kintex7/top_full.xdc (Line: 48)
+Related violations: <none>
+
+
